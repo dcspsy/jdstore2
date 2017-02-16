@@ -1,0 +1,7 @@
+<h1>Show</h1>
+<%= simple_form_for [:admin, @product] do |f| %>
+<div>名称：<%=f.title%></div>
+<div>描述：<%=f.description%></div>
+<div>价格：<%=f.price%></div>
+<div>库存：<%=f.quantity%></div>
+<%end%>
