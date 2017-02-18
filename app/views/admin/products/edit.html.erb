@@ -17,6 +17,9 @@
   <div class="group">
     <%= f.input :price %>
   </div>
+  <div class="group">
+    <%= f.input :categorie%>
+  </div>
 
   <%if @product.image.present?%>
   <span>目前商品图<%=image_tag(f.image.thumb.url)%></span>
