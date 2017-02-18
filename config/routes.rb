@@ -18,8 +18,11 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :cart_items
+  namespace :account do
+    resources :orders
+  end
 
+  resources :cart_items
   resources :orders
 
   root 'products#index'
