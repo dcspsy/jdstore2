@@ -16,12 +16,3 @@ u.password_confirmation = "123456"   # 最少要六码
 u.is_admin = true
 
 u.save
-p = Product.new
-p.title = "野生动物保护基金会"
-p.description = "每一分钱都用于物种续存和拯救"
-p.price = 50
-p.quantity = 100000000
-p.animal = "normal"
-p.protect_them = false
-
-p.save

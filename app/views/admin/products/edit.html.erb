@@ -18,9 +18,12 @@
     <%= f.input :price %>
   </div>
   <div class="group">
-    ['穿山甲'，‘海龟’，’鹰隼’]
+    [穿山甲:'pangolin',海龟:'turtle',鹰隼:'hawk',环保理念页面:'normal']
     <%= f.input :animal%>
   </div>
+
+  <div class="group">
+    <%= f.input :is_hidden %>
 
   <%if @product.image.present?%>
   <span>目前商品图<%=image_tag(f.image.thumb.url)%></span>

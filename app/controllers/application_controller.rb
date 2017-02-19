@@ -19,7 +19,7 @@ class ApplicationController < ActionController::Base
     if cart.blank?
       cart = Cart.create
     end
-  session[:cart_id] = cart.id
+    session[:cart_id] = cart.id
   return cart
-end
+  end
 end
