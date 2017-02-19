@@ -14,7 +14,6 @@ class OrdersController < ApplicationController
         product_list.product_name = cart_item.product.title
         product_list.product_price = cart_item.product.price
         product_list.quantity = cart_item.quantity
-        product_list.product_animal = cart_item.product.animal
         product_list.save
       end
       current_cart.clean!
