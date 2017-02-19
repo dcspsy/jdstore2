@@ -24,6 +24,7 @@
 
   <div class="group">
     <%= f.input :is_hidden %>
+  </div>
 
   <%if @product.image.present?%>
   <span>目前商品图<%=image_tag(f.image.thumb.url)%></span>
