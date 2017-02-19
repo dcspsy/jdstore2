@@ -18,4 +18,12 @@ class ProductsController < ApplicationController
     end
   redirect_to :back
   end
+
+  def protect_them
+    @product = Product.find(params[:id])
+    @product.protect_them = true
+    @product.save
+    redirect_to :back
+    flash[:notice] ="test"
+  end
 end
