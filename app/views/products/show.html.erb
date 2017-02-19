@@ -41,7 +41,7 @@
   <%= render "animals/#{@product.animal}" %>
   ---------------------------------
   <br>
-  <a href="http://localhost:3000/products/4">用购买不必要动物制品的钱帮助<%"#{@product.animal}"%>营造更好的生活环境</a>
+  <a href="/products/2">用购买不必要动物制品的钱帮助<%"#{@product.animal}"%>营造更好的生活环境</a>
   <% @product.protect_them = false%>
   <% @product.save%>
 <%end%>
